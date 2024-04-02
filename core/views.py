@@ -9,8 +9,8 @@ def login(request):
     return render(request, template_name='login.html')
 
 
-def register(request):
-    return render(request, template_name='register.html')
+def signup(request):
+    return render(request, template_name='signup.html')
 
 
 def negotiate(request):
