@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static%}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,11 @@
     <title>{% block title %} Blue Bridge {% endblock %}</title>
 </head>
 <body>
-    <nav class="py-6 flex justify-between items-center border-b border-gray-200 fixed top-0 w-full bg-blue-900 z-10">
-    <a href="/" class="text-xl font-semibold ml-8">Blue Bridge</a>
+    <nav class="py-6 flex justify-between items-center border-b border-gray-200 fixed top-0 w-full z-10 shadow-lg" style="background-color: #4c66a5;">
+    <a href="/core/static" class="text-xl font-semibold ml-8">Blue Bridge</a>
 
         <div class="flex items-center space-x-6 mr-6">
-            <a href="#" class="px-6 py-3 text-lg font-semibold bg-purple-500 text-white rounded-xl hover:bg-gray-700">Menu</a>
+            <a href="#" class="px-6 py-3 text-lg font-semibold bg-blue-500 text-white rounded-xl hover:bg-gray-700">Menu</a>
             <a href="#" class="px-6 py-3 text-lg font-semibold bg-pink-500 text-white rounded-xl hover:bg-gray-700">About</a>
 
         {% if request.user.is_authenticated %}
@@ -36,11 +36,11 @@
         {% endblock %}
     </div>
 
-    <footer class="py-6 px-6 bg-purple-900">
+    <footer class="py-6 px-6" style="background-color: #4c66a5">
 
         <div>
-            <h3 class="mb-5 text-lg text-white hover:text-teal-700">Navigation</h3>
             <ul class="space-y-2">
+                <li><a href="#" class="text-lg text-white hover:text-teal-700">Navigation</a></li>
                 <li><a href="#" class="text-lg text-white hover:text-teal-700">About</a></li>
                 <li><a href="#" class="text-lg text-white hover:text-teal-700">Contact</a></li>
                 <li><a href="#" class="text-lg text-white hover:text-teal-700">Privacy Policy</a></li>
