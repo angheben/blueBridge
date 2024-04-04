@@ -15,3 +15,7 @@ def signup(request):
 
 def negotiate(request):
     return render(request, template_name='negotiate.html')
+
+
+def about(request):
+    return render(request, template_name='about.html')
