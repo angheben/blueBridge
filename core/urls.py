@@ -1,11 +1,17 @@
-from .views import index, login, negotiate, signup, about
+from .views import login,  signup # about, negotiate, index,
+from .views import ControlView
 from django.urls import path
 
 
 urlpatterns = [
-    path("", index, name="index"),
+    path("", ControlView.as_view(), name="control"),
     path("signup/", signup, name="signup"),
     path("login/", login, name="login"),
+]
+
+"""
+    path("", index, name="index"),
+
     path("negotiate/", negotiate, name='negotiate'),
     path("about/", about, name='negotiate'),
-]
+"""

@@ -1,8 +1,9 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 
-def index(request):
-    return render(request, template_name='index.html')
+class ControlView(TemplateView):
+    template_name = "control.html"
 
 
 def login(request):
@@ -13,9 +14,16 @@ def signup(request):
     return render(request, template_name='signup.html')
 
 
+
+"""
+def index(request):
+    return render(request, template_name='index.html')
+
+
 def negotiate(request):
     return render(request, template_name='negotiate.html')
 
 
 def about(request):
     return render(request, template_name='about.html')
+"""
