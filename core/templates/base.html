@@ -12,15 +12,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!--Favicon-->
-    <link rel="icon" href="{% static 'images/logo.png' %}">
+    <link rel="icon" href="{% static 'images/logo3.jpg' %}">
 
 
     <title>{% block title %} Blue Bridge {% endblock %}</title>
 </head>
 <body>
     <nav class="py-6 flex justify-between items-center border-b border-gray-200 fixed top-0 w-full z-10 shadow-lg" style="background-color: #4c66a5;">
-    <a href="{% static 'index.html' %}" class="text-xl font-semibold ml-8">
-        <img src="{% static 'images/logo.png' %}" alt="Company Logo" class="h-8">
+    <a href="{% static 'control.html' %}" class="text-xl font-semibold ml-8">
+        <img src="{% static 'images/logo3.jpg' %}" alt="Company Logo" class="h-16">
     </a>
 
         <div class="flex items-center space-x-6 mr-6">
@@ -41,25 +41,3 @@
         {% block content %}
         {% endblock %}
     </div>
-
-
-
-    <footer class="py-6 px-6" style="background-color: #4c66a5">
-
-        <div>
-            <ul class="space-y-2">
-                <li><a href="#" class="text-lg text-white hover:text-teal-700">Navigation</a></li>
-                <li><a href="#" class="text-lg text-white hover:text-teal-700">About</a></li>
-                <li><a href="#" class="text-lg text-white hover:text-teal-700">Contact</a></li>
-                <li><a href="#" class="text-lg text-white hover:text-teal-700">Privacy Policy</a></li>
-                <li><a href="#" class="text-lg text-white hover:text-teal-700">Terms of Use</a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <!--JavaScrit Files-->
-
-    <script src="{% static 'javascript/script.js' %}"></script>
-
-</body>
-</html>
