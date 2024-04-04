@@ -1,0 +1,12 @@
+HTML notes
+
+name="viewport": This attribute specifies the purpose of the <meta> tag, which is to define viewport settings.
+
+content="width=width-device, initial-scale=1.0": This attribute specifies the content of the viewport settings.
+It consists of two directives separated by a comma:
+
+width=device-width: This directive sets the width of the viewport to the width of the device's screen.
+This ensures that the webpage's content adapts properly to different screen sizes and devices.
+
+initial-scale=1.0: This directive sets the initial zoom level when the webpage is first loaded.
+A value of 1.0 indicates that the webpage should be displayed at its initial size without any zooming applied.
